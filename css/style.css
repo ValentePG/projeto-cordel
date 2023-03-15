@@ -14,18 +14,27 @@
   margin: 0px;
   padding: 0px;
 }
+
+html, body{
+  min-height: 100vh;
+  background-color: darkgray;
+}
+
+
+      /* Header */
+
+
 header{
   background-color: black;
   color: white;
   text-align: center;
-  min-height: 220px;
-  
 }
 
 header h1{
   font-family: var(--fonte2);
   font-weight: bold;
-  font-size: 94px;
+  /* font-size: 94px; */
+  font-size: 10vw;
   font-variant: small-caps;
   padding-top: 50px;
 }
@@ -33,57 +42,54 @@ header h1{
 header p{
   font-size: 1em;
   font-family: var(--fonte1);
+  padding-bottom: 50px;
 }
 
-header a{
+header a, footer a{
   text-decoration: none;
   color: white;
   font-weight: bolder;
 }
 
-header a:hover{
+header a:hover, footer a:hover{
   text-decoration: underline
+}
+
+
+      /* Section */
+
+section {
+  font-family: var(--fonte3);
+  /* font-size: 2em; */
+  font-size: 3.5vw;
+  padding: 10vh 30px 10vh 30px;
+  line-height: 2em;
 }
 
 section.branco{
   background-color: white;
-  font-family: var(--fonte3);
-  font-size: 2em;
-  padding: 100px 30px 165px 30px;
-  line-height: 60px;
 }
 
 section.colorido{
   color: white;
   background-color: green;
-  font-family: var(--fonte3);
-  font-size: 2em;
-  padding: 100px 30px 165px 30px;
-  line-height: 60px;
 }
 
 section.colorido > p{
   background-color: rgba(0, 0, 0, 0.377);
-  width: 380px;
-  padding: 5px 5px 10px 5px;
+  display: inline-block;
+  padding: 5px;
 }
+
+
+    /* Footer */
+
 
 footer{
   font-family: var(--fonte1);
   background-color: black;
   color: white;
   text-align: center;
-  height: 20px;
   font-size: 0.9em;
   padding: 10px;
-}
-
-footer a{
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-}
-
-footer a:hover{
-  text-decoration: underline;
 }
